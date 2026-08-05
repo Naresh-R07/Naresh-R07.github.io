@@ -85,7 +85,6 @@
 .research-card {
   display: flex;
   flex-direction: column;
-  aspect-ratio: 1;
   overflow: hidden;
   padding: var(--space-lg);
 }
@@ -110,7 +109,6 @@
   border-color: #505050 #000000 #000000 #505050;
   overflow: hidden;
   transition: none;
-  aspect-ratio: 1;
   display: flex;
   flex-direction: column;
 }

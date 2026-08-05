@@ -1,0 +1,113 @@
+/* ============================================
+   NEXUS — Certifications
+   ============================================ */
+
+.cert-category {
+  margin-bottom: var(--space-3xl);
+}
+
+.cert-category:last-child {
+  margin-bottom: 0;
+}
+
+.cert-category__label {
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: var(--primary);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  margin-bottom: var(--space-lg);
+  padding-left: var(--space-md);
+  border-left: 2px solid var(--primary);
+}
+
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: var(--space-md);
+}
+
+.cert-card {
+  display: flex;
+  flex-direction: column;
+  background: var(--surface-1);
+  border: var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: var(--space-xl);
+  text-decoration: none;
+  color: inherit;
+  transition: all var(--duration-normal) var(--ease-out);
+  position: relative;
+  overflow: hidden;
+}
+
+.cert-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    500px circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
+    rgba(var(--primary-rgb), 0.05),
+    transparent 40%
+  );
+  opacity: 0;
+  transition: opacity var(--duration-normal);
+  pointer-events: none;
+}
+
+.cert-card:hover {
+  border-color: rgba(var(--primary-rgb), 0.25);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-glow-cyan);
+}
+
+.cert-card:hover::before {
+  opacity: 1;
+}
+
+.cert-card__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-md);
+}
+
+.cert-card__icon {
+  font-size: 1.5rem;
+}
+
+.cert-card__date {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  color: var(--text-muted);
+}
+
+.cert-card__title {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: var(--space-xs);
+  line-height: 1.4;
+}
+
+.cert-card__issuer {
+  font-size: 0.8125rem;
+  color: var(--text-tertiary);
+  margin-bottom: var(--space-md);
+}
+
+.cert-card__link {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--primary);
+  opacity: 0;
+  transform: translateX(-8px);
+  transition: all var(--duration-normal) var(--ease-out);
+  margin-top: auto;
+}
+
+.cert-card:hover .cert-card__link {
+  opacity: 1;
+  transform: translateX(0);
+}

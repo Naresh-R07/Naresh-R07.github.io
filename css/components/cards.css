@@ -1,0 +1,319 @@
+/* ============================================
+   NEXUS — Cards
+   ============================================ */
+
+/* ── Profile Card ── */
+
+.profile-card {
+  background: var(--surface-1);
+  border: var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: var(--space-xl);
+}
+
+.profile-card__header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  margin-bottom: var(--space-xl);
+  padding-bottom: var(--space-lg);
+  border-bottom: var(--border-subtle);
+}
+
+.profile-card__avatar {
+  position: relative;
+  width: 56px;
+  height: 56px;
+  flex-shrink: 0;
+}
+
+.profile-card__avatar-ring {
+  position: absolute;
+  inset: -3px;
+  border-radius: 50%;
+  border: 2px solid var(--primary);
+  animation: pulseRing 2s ease-in-out infinite;
+}
+
+@keyframes pulseRing {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(1.05); }
+}
+
+.profile-card__avatar-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  background: var(--surface-2);
+  border-radius: 50%;
+  font-family: var(--font-mono);
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.profile-card__name {
+  font-size: 1.25rem;
+  margin-bottom: var(--space-2xs);
+}
+
+.profile-card__role {
+  font-size: 0.875rem;
+  color: var(--text-tertiary);
+}
+
+.profile-card__fields {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-md);
+}
+
+.profile-card__field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2xs);
+}
+
+.profile-card__label {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.profile-card__value {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+}
+
+/* ── Research Card ── */
+
+.research-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.research-card h4 {
+  margin-bottom: var(--space-sm);
+}
+
+/* ── Project Card ── */
+
+.project-card {
+  background: var(--surface-1);
+  border: var(--border-subtle);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transition: all var(--duration-normal) var(--ease-out);
+}
+
+.project-card:hover {
+  border-color: rgba(255, 255, 255, 0.1);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.project-card__image {
+  width: 100%;
+  height: 200px;
+  background: var(--surface-2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.project-card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project-card__body {
+  padding: var(--space-lg);
+}
+
+.project-card__category {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--primary);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: var(--space-sm);
+}
+
+.project-card__title {
+  font-size: 1.25rem;
+  margin-bottom: var(--space-sm);
+}
+
+.project-card__desc {
+  font-size: 0.875rem;
+  color: var(--text-tertiary);
+  margin-bottom: var(--space-md);
+  line-height: 1.6;
+}
+
+.project-card__tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+  margin-bottom: var(--space-md);
+}
+
+.project-card__links {
+  display: flex;
+  gap: var(--space-sm);
+}
+
+/* ── GitHub Repo Card ── */
+
+.repo-card {
+  background: var(--surface-1);
+  border: var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: var(--space-lg);
+  transition: all var(--duration-normal) var(--ease-out);
+}
+
+.repo-card:hover {
+  border-color: rgba(var(--primary-rgb), 0.2);
+  transform: translateY(-2px);
+}
+
+.repo-card__name {
+  font-family: var(--font-mono);
+  font-size: 0.9375rem;
+  color: var(--primary);
+  margin-bottom: var(--space-sm);
+}
+
+.repo-card__desc {
+  font-size: 0.8125rem;
+  color: var(--text-tertiary);
+  margin-bottom: var(--space-md);
+  line-height: 1.5;
+}
+
+.repo-card__meta {
+  display: flex;
+  gap: var(--space-md);
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+/* ── Blog Card ── */
+
+.blog-card {
+  background: var(--surface-1);
+  border: var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: var(--space-xl);
+  transition: all var(--duration-normal) var(--ease-out);
+  cursor: pointer;
+}
+
+.blog-card:hover {
+  border-color: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+}
+
+.blog-card__date {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-bottom: var(--space-sm);
+}
+
+.blog-card__title {
+  font-size: 1.125rem;
+  margin-bottom: var(--space-sm);
+}
+
+.blog-card__excerpt {
+  font-size: 0.875rem;
+  color: var(--text-tertiary);
+  margin-bottom: var(--space-md);
+}
+
+.blog-card__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+}
+
+/* ── Achievement ── */
+
+.achievements-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: var(--space-lg);
+  text-align: center;
+}
+
+.achievement {
+  padding: var(--space-xl);
+}
+
+.achievement__number {
+  display: block;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 700;
+  color: var(--primary);
+  line-height: 1;
+  margin-bottom: var(--space-sm);
+}
+
+.achievement__label {
+  font-size: 0.875rem;
+  color: var(--text-tertiary);
+}
+
+/* ── GitHub Stats ── */
+
+.github-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-lg);
+  margin-bottom: var(--space-xl);
+}
+
+.github-stat {
+  text-align: center;
+  padding: var(--space-lg);
+  background: var(--surface-1);
+  border: var(--border-subtle);
+  border-radius: var(--radius-md);
+}
+
+.github-stat__number {
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: var(--space-xs);
+}
+
+.github-stat__label {
+  font-size: 0.8125rem;
+  color: var(--text-tertiary);
+}
+
+@media (max-width: 767px) {
+  .github-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .achievements-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .profile-card__fields {
+    grid-template-columns: 1fr;
+  }
+}

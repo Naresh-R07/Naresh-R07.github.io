@@ -1,0 +1,407 @@
+- generic [active] [ref=f2e1]:
+  - link "Skip to main content" [ref=f2e2] [cursor=pointer]:
+    - /url: "#main"
+  - generic [ref=f2e4]:
+    - generic [ref=f2e5]: Naresh-R07
+    - generic [ref=f2e7]: INITIALIZING...
+  - banner [ref=f2e8]:
+    - generic [ref=f2e9]:
+      - link "Naresh-R07 - Home" [ref=f2e10] [cursor=pointer]:
+        - /url: "#"
+        - generic [ref=f2e11]: Naresh-R07
+      - navigation "Main navigation" [ref=f2e12]:
+        - link "About" [ref=f2e13] [cursor=pointer]:
+          - /url: "#about"
+        - link "Skills" [ref=f2e14] [cursor=pointer]:
+          - /url: "#skills"
+        - link "Projects" [ref=f2e15] [cursor=pointer]:
+          - /url: "#projects"
+        - link "Research" [ref=f2e16] [cursor=pointer]:
+          - /url: "#research"
+        - link "Experience" [ref=f2e17] [cursor=pointer]:
+          - /url: "#experience"
+        - link "Blog" [ref=f2e18] [cursor=pointer]:
+          - /url: "#blog"
+        - link "Contact" [ref=f2e19] [cursor=pointer]:
+          - /url: "#contact"
+      - link "Let's Talk" [ref=f2e21] [cursor=pointer]:
+        - /url: "#contact"
+  - main [ref=f2e23]:
+    - generic [ref=f2e28]:
+      - generic [ref=f2e29]:
+        - generic [ref=f2e30]: ● Available for Work
+        - generic [ref=f2e31]: TryHackMe
+        - generic [ref=f2e32]: HackTheBox
+        - generic [ref=f2e33]: PicoCTF
+      - heading "Building Secure Systems. Breaking Insecure Ones." [level=1] [ref=f2e34]:
+        - generic [ref=f2e35]: Building Secure Systems.
+        - generic [ref=f2e36]: Breaking Insecure Ones.
+      - paragraph [ref=f2e37]:
+        - generic [ref=f2e38]: AI Security Researcher
+        - generic [ref=f2e39]: "|"
+        - generic [ref=f2e40]: Red Team Specialist
+        - generic [ref=f2e41]: "|"
+        - generic [ref=f2e42]: SOC Analyst
+      - generic [ref=f2e43]:
+        - link "View Projects" [ref=f2e44] [cursor=pointer]:
+          - /url: "#projects"
+        - link "Contact" [ref=f2e45] [cursor=pointer]:
+          - /url: "#contact"
+      - generic [ref=f2e46]: SCROLL
+    - generic [ref=f2e51]:
+      - generic [ref=f2e52]:
+        - generic [ref=f2e53]: // INTELLIGENCE PROFILE
+        - generic [ref=f2e54]:
+          - generic [ref=f2e55]:
+            - generic [ref=f2e56]: NR
+            - generic [ref=f2e59]:
+              - heading "NARESH RAJJ S" [level=3] [ref=f2e60]
+              - paragraph [ref=f2e61]: AI Security Researcher
+          - generic [ref=f2e62]:
+            - generic [ref=f2e63]:
+              - generic [ref=f2e64]: STATUS
+              - generic [ref=f2e65]: ● ONLINE
+            - generic [ref=f2e66]:
+              - generic [ref=f2e67]: FOCUS
+              - generic [ref=f2e68]: Offensive Security • AI Security
+            - generic [ref=f2e69]:
+              - generic [ref=f2e70]: MISSION
+              - generic [ref=f2e71]: Build • Break • Secure
+            - generic [ref=f2e72]:
+              - generic [ref=f2e73]: AVAILABILITY
+              - generic [ref=f2e74]: Open to Opportunities
+      - generic [ref=f2e75]:
+        - heading "The Cybersecurity Mind Behind the Screen" [level=2] [ref=f2e76]: The CybersecurityMind Behind the Screen
+        - paragraph [ref=f2e77]: Passionate about finding vulnerabilities before attackers do. Specializing in AI/LLM security research, Red Team operations, and building robust SOC detection systems. Every system has a weakness — my mission is to find it and fix it.
+    - generic [ref=f2e79]:
+      - generic [ref=f2e80]:
+        - generic [ref=f2e81]: // ABOUT
+        - heading "The Journey So Far" [level=2] [ref=f2e82]
+        - paragraph [ref=f2e83]: From writing first lines of code to breaking into systems and securing AI — every step has been a building block.
+      - generic [ref=f2e84]:
+        - generic [ref=f2e88]:
+          - generic [ref=f2e89]: ORIGIN
+          - heading "Programming" [level=4] [ref=f2e90]
+          - paragraph [ref=f2e91]: Started with Python and C. Built foundations in algorithms, data structures, and problem-solving.
+        - generic [ref=f2e94]:
+          - generic [ref=f2e95]: PHASE 02
+          - heading "Web Development" [level=4] [ref=f2e96]
+          - paragraph [ref=f2e97]: Full-stack development with React, Node.js, Flask. Built web applications from scratch.
+        - generic [ref=f2e100]:
+          - generic [ref=f2e101]: PHASE 03
+          - heading "Cybersecurity" [level=4] [ref=f2e102]
+          - paragraph [ref=f2e103]: Dove into offensive security. Mastered Burp Suite, Nmap, Metasploit. Started hunting vulnerabilities.
+        - generic [ref=f2e106]:
+          - generic [ref=f2e107]: PHASE 04
+          - heading "CTF Competitions" [level=4] [ref=f2e108]
+          - paragraph [ref=f2e109]: Competed on TryHackMe, HackTheBox, PicoCTF. Developed CTF challenges. Placed 8th at Root Access 2k26.
+        - generic [ref=f2e112]:
+          - generic [ref=f2e113]: PHASE 05
+          - heading "AI Security Research" [level=4] [ref=f2e114]
+          - paragraph [ref=f2e115]: Researching LLM vulnerabilities, prompt injection, AI red teaming. Building secure AI applications and agents.
+        - generic [ref=f2e118]:
+          - generic [ref=f2e119]: NOW
+          - heading "Challenge Development" [level=4] [ref=f2e120]
+          - paragraph [ref=f2e121]: Creating CTF challenges, security tools, and contributing to the offensive security community.
+    - generic [ref=f2e123]:
+      - generic [ref=f2e124]:
+        - generic [ref=f2e125]: // TECHNICAL ARSENAL
+        - heading "Skills & Expertise" [level=2] [ref=f2e126]
+      - generic [ref=f2e127]:
+        - generic [ref=f2e128]:
+          - generic [ref=f2e129]: 💻
+          - heading "Programming" [level=4] [ref=f2e130]
+          - generic [ref=f2e131]:
+            - generic [ref=f2e132]: Python
+            - generic [ref=f2e133]: C
+            - generic [ref=f2e134]: C++
+            - generic [ref=f2e135]: Java
+            - generic [ref=f2e136]: JavaScript
+            - generic [ref=f2e137]: Bash
+        - generic [ref=f2e138]:
+          - generic [ref=f2e139]: 🌐
+          - heading "Web Development" [level=4] [ref=f2e140]
+          - generic [ref=f2e141]:
+            - generic [ref=f2e142]: HTML
+            - generic [ref=f2e143]: CSS
+            - generic [ref=f2e144]: Tailwind
+            - generic [ref=f2e145]: React
+            - generic [ref=f2e146]: Next.js
+            - generic [ref=f2e147]: Node.js
+            - generic [ref=f2e148]: Flask
+        - generic [ref=f2e149]:
+          - generic [ref=f2e150]: 🛡️
+          - heading "Cybersecurity" [level=4] [ref=f2e151]
+          - generic [ref=f2e152]:
+            - generic [ref=f2e153]: Web Security
+            - generic [ref=f2e154]: Reverse Engineering
+            - generic [ref=f2e155]: Cryptography
+            - generic [ref=f2e156]: Forensics
+            - generic [ref=f2e157]: Binary Exploitation
+            - generic [ref=f2e158]: OSINT
+        - generic [ref=f2e159]:
+          - generic [ref=f2e160]: ⚔️
+          - heading "Offensive Tools" [level=4] [ref=f2e161]
+          - generic [ref=f2e162]:
+            - generic [ref=f2e163]: Burp Suite
+            - generic [ref=f2e164]: Nmap
+            - generic [ref=f2e165]: Nuclei
+            - generic [ref=f2e166]: Nikto
+            - generic [ref=f2e167]: Gobuster
+            - generic [ref=f2e168]: Hydra
+            - generic [ref=f2e169]: Metasploit
+            - generic [ref=f2e170]: Wireshark
+            - generic [ref=f2e171]: OWASP ZAP
+            - generic [ref=f2e172]: Netcat
+        - generic [ref=f2e173]:
+          - generic [ref=f2e174]: 🤖
+          - heading "AI & LLM Security" [level=4] [ref=f2e175]
+          - generic [ref=f2e176]:
+            - generic [ref=f2e177]: Claude API
+            - generic [ref=f2e178]: OpenAI
+            - generic [ref=f2e179]: LangChain
+            - generic [ref=f2e180]: Prompt Engineering
+            - generic [ref=f2e181]: AI Red Teaming
+            - generic [ref=f2e182]: LLM Security
+            - generic [ref=f2e183]: MCP
+            - generic [ref=f2e184]: AI Agents
+        - generic [ref=f2e185]:
+          - generic [ref=f2e186]: ⚙️
+          - heading "Platforms" [level=4] [ref=f2e187]
+          - generic [ref=f2e188]:
+            - generic [ref=f2e189]: Docker
+            - generic [ref=f2e190]: Git
+            - generic [ref=f2e191]: Linux
+            - generic [ref=f2e192]: Kali
+            - generic [ref=f2e193]: Parrot
+    - generic [ref=f2e196]:
+      - generic [ref=f2e197]: // FEATURED PROJECTS
+      - heading "Case Studies" [level=2] [ref=f2e198]
+      - paragraph [ref=f2e199]: Security tools, AI applications, and offensive research — built to break and built to protect.
+    - generic [ref=f2e201]:
+      - generic [ref=f2e202]:
+        - generic [ref=f2e203]: // CTF LABORATORY
+        - heading "Capture The Flag" [level=2] [ref=f2e204]
+        - paragraph [ref=f2e205]: Challenge archives from TryHackMe, HackTheBox, PicoCTF, and custom CTF development.
+      - generic [ref=f2e206]:
+        - button "All" [ref=f2e207] [cursor=pointer]
+        - button "Web" [ref=f2e208] [cursor=pointer]
+        - button "Crypto" [ref=f2e209] [cursor=pointer]
+        - button "Reverse" [ref=f2e210] [cursor=pointer]
+        - button "Forensics" [ref=f2e211] [cursor=pointer]
+        - button "Pwn" [ref=f2e212] [cursor=pointer]
+        - button "AI/ML" [ref=f2e213] [cursor=pointer]
+    - generic [ref=f2e215]:
+      - generic [ref=f2e216]:
+        - generic [ref=f2e217]: // RESEARCH
+        - heading "AI Security Research" [level=2] [ref=f2e218]
+        - paragraph [ref=f2e219]: Investigating vulnerabilities in AI systems, LLMs, and autonomous agents.
+      - generic [ref=f2e220]:
+        - generic [ref=f2e221]:
+          - generic [ref=f2e222]: AI Security
+          - heading "LLM Prompt Injection" [level=4] [ref=f2e223]
+          - paragraph [ref=f2e224]: Researching attack vectors against large language models including direct and indirect prompt injection techniques.
+        - generic [ref=f2e225]:
+          - generic [ref=f2e226]: AI Red Teaming
+          - heading "AI Agent Exploitation" [level=4] [ref=f2e227]
+          - paragraph [ref=f2e228]: Identifying security gaps in autonomous AI agents and developing exploitation methodologies.
+        - generic [ref=f2e229]:
+          - generic [ref=f2e230]: MCP
+          - heading "Model Context Protocol Security" [level=4] [ref=f2e231]
+          - paragraph [ref=f2e232]: Analyzing security implications of MCP in AI agent ecosystems and tool integrations.
+        - generic [ref=f2e233]:
+          - generic [ref=f2e234]: SOC
+          - heading "Behavioral Threat Detection" [level=4] [ref=f2e235]
+          - paragraph [ref=f2e236]: Building statistical baselining systems for detecting anomalous authentication behavior.
+    - generic [ref=f2e238]:
+      - generic [ref=f2e239]:
+        - generic [ref=f2e240]: // GITHUB DASHBOARD
+        - heading "Open Source Activity" [level=2] [ref=f2e241]
+      - generic [ref=f2e242]:
+        - generic [ref=f2e243]:
+          - generic [ref=f2e244]: "0"
+          - text: Repositories
+        - generic [ref=f2e245]:
+          - generic [ref=f2e246]: "0"
+          - text: Stars
+        - generic [ref=f2e247]:
+          - generic [ref=f2e248]: "0"
+          - text: Followers
+        - generic [ref=f2e249]:
+          - generic [ref=f2e250]: "6"
+          - text: Languages
+    - generic [ref=f2e253]:
+      - generic [ref=f2e254]: // EXPERIENCE
+      - heading "Timeline" [level=2] [ref=f2e255]
+    - generic [ref=f2e257]:
+      - generic [ref=f2e258]:
+        - generic [ref=f2e259]: // CERTIFICATIONS
+        - heading "Credentials" [level=2] [ref=f2e260]
+      - generic [ref=f2e261]:
+        - heading "Cybersecurity" [level=3] [ref=f2e262]
+        - generic [ref=f2e263]:
+          - link "🛡️ 2025 Google Cybersecurity Professional Certificate Google View Certificate →" [ref=f2e264] [cursor=pointer]:
+            - /url: cert/google-cybersecurity.pdf
+            - generic [ref=f2e265]:
+              - generic [ref=f2e266]: 🛡️
+              - generic [ref=f2e267]: "2025"
+            - heading "Google Cybersecurity Professional Certificate" [level=4] [ref=f2e268]
+            - paragraph [ref=f2e269]: Google
+            - generic [ref=f2e270]: View Certificate →
+          - link "🔓 2025 Cisco Ethical Hacker Cisco View Certificate →" [ref=f2e271] [cursor=pointer]:
+            - /url: cert/cisco-ethical-hacker.pdf
+            - generic [ref=f2e272]:
+              - generic [ref=f2e273]: 🔓
+              - generic [ref=f2e274]: "2025"
+            - heading "Cisco Ethical Hacker" [level=4] [ref=f2e275]
+            - paragraph [ref=f2e276]: Cisco
+            - generic [ref=f2e277]: View Certificate →
+          - link "🔐 2025 Introduction to Cybersecurity Cisco View Certificate →" [ref=f2e278] [cursor=pointer]:
+            - /url: cert/cisco-intro-to-cybersecurity.pdf
+            - generic [ref=f2e279]:
+              - generic [ref=f2e280]: 🔐
+              - generic [ref=f2e281]: "2025"
+            - heading "Introduction to Cybersecurity" [level=4] [ref=f2e282]
+            - paragraph [ref=f2e283]: Cisco
+            - generic [ref=f2e284]: View Certificate →
+          - link "🌐 2025 CCNA — Introduction to Networks Cisco View Certificate →" [ref=f2e285] [cursor=pointer]:
+            - /url: cert/cisco-ccna-intro-to-networks.pdf
+            - generic [ref=f2e286]:
+              - generic [ref=f2e287]: 🌐
+              - generic [ref=f2e288]: "2025"
+            - heading "CCNA — Introduction to Networks" [level=4] [ref=f2e289]
+            - paragraph [ref=f2e290]: Cisco
+            - generic [ref=f2e291]: View Certificate →
+      - generic [ref=f2e292]:
+        - heading "AI & LLM" [level=3] [ref=f2e293]
+        - generic [ref=f2e294]:
+          - link "🤖 2025 Claude API Anthropic View Certificate →" [ref=f2e295] [cursor=pointer]:
+            - /url: https://www.credential.net
+            - generic [ref=f2e296]:
+              - generic [ref=f2e297]: 🤖
+              - generic [ref=f2e298]: "2025"
+            - heading "Claude API" [level=4] [ref=f2e299]
+            - paragraph [ref=f2e300]: Anthropic
+            - generic [ref=f2e301]: View Certificate →
+          - link "🔗 2025 Intro to Model Context Protocol Anthropic View Certificate →" [ref=f2e302] [cursor=pointer]:
+            - /url: https://www.credential.net
+            - generic [ref=f2e303]:
+              - generic [ref=f2e304]: 🔗
+              - generic [ref=f2e305]: "2025"
+            - heading "Intro to Model Context Protocol" [level=4] [ref=f2e306]
+            - paragraph [ref=f2e307]: Anthropic
+            - generic [ref=f2e308]: View Certificate →
+      - generic [ref=f2e309]:
+        - heading "Database" [level=3] [ref=f2e310]
+        - link "🍃 2025 Securing MongoDB — Authentication & Authorization MongoDB View Certificate →" [ref=f2e312] [cursor=pointer]:
+          - /url: cert/mongodb-security.pdf
+          - generic [ref=f2e313]:
+            - generic [ref=f2e314]: 🍃
+            - generic [ref=f2e315]: "2025"
+          - heading "Securing MongoDB — Authentication & Authorization" [level=4] [ref=f2e316]
+          - paragraph [ref=f2e317]: MongoDB
+          - generic [ref=f2e318]: View Certificate →
+      - generic [ref=f2e319]:
+        - heading "CTF" [level=3] [ref=f2e320]
+        - link "🏆 2026 Root Access CTF — 8th Place Team D3ds3c View Certificate →" [ref=f2e322] [cursor=pointer]:
+          - /url: cert/root-access-ctf-8th.pdf
+          - generic [ref=f2e323]:
+            - generic [ref=f2e324]: 🏆
+            - generic [ref=f2e325]: "2026"
+          - heading "Root Access CTF — 8th Place" [level=4] [ref=f2e326]
+          - paragraph [ref=f2e327]: Team D3ds3c
+          - generic [ref=f2e328]: View Certificate →
+    - generic [ref=f2e331]:
+      - generic [ref=f2e332]:
+        - generic [ref=f2e333]: "0"
+        - text: Repositories
+      - generic [ref=f2e334]:
+        - generic [ref=f2e335]: "0"
+        - text: Certifications
+      - generic [ref=f2e336]:
+        - generic [ref=f2e337]: "0"
+        - text: Languages
+      - generic [ref=f2e338]:
+        - generic [ref=f2e339]: "0"
+        - text: CTF Platforms
+      - generic [ref=f2e340]:
+        - generic [ref=f2e341]: "0"
+        - text: Security Tools
+      - generic [ref=f2e342]:
+        - generic [ref=f2e343]: "0"
+        - text: AI/LLM Certs
+    - generic [ref=f2e346]:
+      - generic [ref=f2e347]: // BLOG
+      - heading "Write-ups & Insights" [level=2] [ref=f2e348]
+      - paragraph [ref=f2e349]: CTF write-ups, security research notes, and AI security explorations.
+    - generic [ref=f2e351]:
+      - generic [ref=f2e352]:
+        - generic [ref=f2e353]: // CONTACT
+        - heading "Get In Touch" [level=2] [ref=f2e354]
+        - paragraph [ref=f2e355]: Have a project in mind or want to collaborate? Let's talk.
+      - generic [ref=f2e356]:
+        - generic [ref=f2e357]:
+          - link "⚡ GitHub @Naresh-R07" [ref=f2e358] [cursor=pointer]:
+            - /url: https://github.com/Naresh-R07
+            - generic [ref=f2e359]: ⚡
+            - generic [ref=f2e360]:
+              - generic [ref=f2e361]: GitHub
+              - generic [ref=f2e362]: "@Naresh-R07"
+          - link "💼 LinkedIn naresh-rajj-s" [ref=f2e363] [cursor=pointer]:
+            - /url: https://www.linkedin.com/in/naresh-rajj-s-526564327
+            - generic [ref=f2e364]: 💼
+            - generic [ref=f2e365]:
+              - generic [ref=f2e366]: LinkedIn
+              - generic [ref=f2e367]: naresh-rajj-s
+          - link "📧 Email Send a message" [ref=f2e368] [cursor=pointer]:
+            - /url: mailto:naresh@example.com
+            - generic [ref=f2e369]: 📧
+            - generic [ref=f2e370]:
+              - generic [ref=f2e371]: Email
+              - generic [ref=f2e372]: Send a message
+        - generic [ref=f2e373]:
+          - generic [ref=f2e374]:
+            - generic [ref=f2e375]: Name
+            - textbox "Name" [ref=f2e376]
+          - generic [ref=f2e377]:
+            - generic [ref=f2e378]: Email
+            - textbox "Email" [ref=f2e379]
+          - generic [ref=f2e380]:
+            - generic [ref=f2e381]: Subject
+            - textbox "Subject" [ref=f2e382]
+          - generic [ref=f2e383]:
+            - generic [ref=f2e384]: Message
+            - textbox "Message" [ref=f2e385]
+          - button "Send Message" [ref=f2e386] [cursor=pointer]
+  - contentinfo [ref=f2e387]:
+    - generic [ref=f2e388]:
+      - generic [ref=f2e389]:
+        - generic [ref=f2e390]:
+          - text: Naresh-R07
+          - paragraph [ref=f2e391]: Build • Break • Secure
+        - generic [ref=f2e392]:
+          - link "About" [ref=f2e393] [cursor=pointer]:
+            - /url: "#about"
+          - link "Skills" [ref=f2e394] [cursor=pointer]:
+            - /url: "#skills"
+          - link "Projects" [ref=f2e395] [cursor=pointer]:
+            - /url: "#projects"
+          - link "Contact" [ref=f2e396] [cursor=pointer]:
+            - /url: "#contact"
+        - generic [ref=f2e397]:
+          - link "GitHub" [ref=f2e398] [cursor=pointer]:
+            - /url: https://github.com/Naresh-R07
+            - text: GH
+          - link "LinkedIn" [ref=f2e399] [cursor=pointer]:
+            - /url: https://www.linkedin.com/in/naresh-rajj-s-526564327
+            - text: LI
+      - generic [ref=f2e403]:
+        - paragraph [ref=f2e404]: © 2026 NARESH RAJJ S. All rights reserved.
+        - button "Back to top" [ref=f2e405] [cursor=pointer]: ↑ Top
+  - generic:
+    - generic:
+      - generic: naresh@research:~$
+      - button: ✕
+    - generic:
+      - generic: ❯
+      - textbox

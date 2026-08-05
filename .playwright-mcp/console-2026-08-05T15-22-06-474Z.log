@@ -1,0 +1,7 @@
+[   43620ms] [ERROR] Failed to load resource: the server responded with a status of 404 (File not found) @ http://localhost:8080/assets/fonts/inter-semibold.woff2:0
+[   43624ms] [ERROR] Failed to load resource: the server responded with a status of 404 (File not found) @ http://localhost:8080/assets/fonts/geist-sans-bold.woff2:0
+[   43625ms] [ERROR] Failed to load resource: the server responded with a status of 404 (File not found) @ http://localhost:8080/assets/fonts/inter-medium.woff2:0
+[   43625ms] [ERROR] Failed to load resource: the server responded with a status of 404 (File not found) @ http://localhost:8080/assets/fonts/inter-regular.woff2:0
+[   43625ms] [ERROR] Failed to load resource: the server responded with a status of 404 (File not found) @ http://localhost:8080/assets/fonts/jetbrains-mono-medium.woff2:0
+[   43625ms] [ERROR] Failed to load resource: the server responded with a status of 404 (File not found) @ http://localhost:8080/assets/fonts/jetbrains-mono-regular.woff2:0
+[   43625ms] [ERROR] Failed to load resource: the server responded with a status of 404 (File not found) @ http://localhost:8080/assets/fonts/space-grotesk-bold.woff2:0

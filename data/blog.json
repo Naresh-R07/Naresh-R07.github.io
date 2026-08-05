@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Getting Started with AI Red Teaming",
+    "date": "2026-07-20",
+    "readingTime": "8 min",
+    "tags": ["AI Security", "Red Teaming", "LLM"],
+    "excerpt": "A practical guide to red teaming AI systems, covering prompt injection, jailbreaking, and model extraction techniques.",
+    "file": "pages/blog/ai-red-teaming-intro.md"
+  },
+  {
+    "title": "Building VulnzxScanX: A Multi-Interface Scanner",
+    "date": "2026-06-15",
+    "readingTime": "12 min",
+    "tags": ["Security Tools", "Python", "Nmap"],
+    "excerpt": "How I built a vulnerability scanner supporting CLI, Web, and GUI interfaces with IP rotation via Tor.",
+    "file": "pages/blog/vulnzxscanx-build.md"
+  },
+  {
+    "title": "CTF Write-up: Root Access 2k26",
+    "date": "2026-04-12",
+    "readingTime": "10 min",
+    "tags": ["CTF", "Write-up", "Security"],
+    "excerpt": "Team D3ds3c's journey to 8th place at Root Access 2k26 — challenges solved, techniques used.",
+    "file": "pages/blog/root-access-2k26-writeup.md"
+  }
+]

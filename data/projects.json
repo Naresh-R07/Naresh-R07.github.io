@@ -1,0 +1,74 @@
+[
+  {
+    "title": "VulnzxScanX",
+    "category": "Security Tool",
+    "description": "Multi-interface vulnerability scanner aggregator using Nmap. Supports CLI, Web Dashboard, and GUI with IP rotation via Tor.",
+    "tech": ["Python", "Flask", "Nmap", "Tkinter", "Tor"],
+    "icon": "🔍",
+    "github": "https://github.com/Naresh-R07/VulnzxScanX",
+    "featured": true
+  },
+  {
+    "title": "Identity-AI",
+    "category": "AI Security",
+    "description": "Behavioral threat detection system that analyzes authentication logs to detect suspicious activity using statistical baselining.",
+    "tech": ["Python", "Flask", "JavaScript", "Statistical Analysis"],
+    "icon": "🛡️",
+    "github": "https://github.com/Naresh-R07/Identity-AI",
+    "featured": true
+  },
+  {
+    "title": "ML CTF Challenges",
+    "category": "CTF / AI",
+    "description": "AI/ML security CTF challenges covering model attacks, LLM exploitation, and AI Agent exploitation techniques.",
+    "tech": ["Python", "Machine Learning", "AI Security"],
+    "icon": "🤖",
+    "github": "https://github.com/Naresh-R07/Machine_Learning_CTF_Challenges",
+    "featured": true
+  },
+  {
+    "title": "Claude-Red",
+    "category": "Offensive AI",
+    "description": "Curated library of offensive security skills designed for the Claude skills system. Expert-level methodology for security testing.",
+    "tech": ["Python", "Claude API", "Security"],
+    "icon": "⚔️",
+    "github": "https://github.com/Naresh-R07/Claude-Red",
+    "featured": true
+  },
+  {
+    "title": "neo-profile-scribe",
+    "category": "Web Development",
+    "description": "Profile generation tool built with React, TypeScript, Vite, and Tailwind CSS.",
+    "tech": ["React", "TypeScript", "Vite", "Tailwind CSS"],
+    "icon": "📝",
+    "github": "https://github.com/Naresh-R07/neo-profile-scribe",
+    "featured": false
+  },
+  {
+    "title": "face-recognition-app",
+    "category": "AI",
+    "description": "Face recognition application using machine learning.",
+    "tech": ["Python", "Machine Learning"],
+    "icon": "👤",
+    "github": "https://github.com/Naresh-R07/face-recognition-app",
+    "featured": false
+  },
+  {
+    "title": "India-Accelerator-OpenXAI-2025",
+    "category": "AI / Open Source",
+    "description": "OpenXAI accelerator project for AI research and development.",
+    "tech": ["TypeScript", "AI"],
+    "icon": "🚀",
+    "github": "https://github.com/Naresh-R07/India-Accelerator-OpenXAI-2025",
+    "featured": false
+  },
+  {
+    "title": "Root-Access-2k26",
+    "category": "CTF",
+    "description": "CTF write-ups by Team D3ds3c. 8th place finish.",
+    "tech": ["Security", "CTF"],
+    "icon": "🏆",
+    "github": "https://github.com/Naresh-R07/Root-Access-2k26",
+    "featured": false
+  }
+]

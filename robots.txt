@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /cert/
+Disallow: /data/
+Disallow: /pages/
+
+Sitemap: https://naresh-r07.github.io/sitemap.xml

@@ -1,0 +1,67 @@
+/* ============================================
+   NEXUS — Responsive Design
+   ============================================ */
+
+/* ── Mobile: 375px+ ── */
+@media (max-width: 767px) {
+  :root {
+    --container-padding: var(--space-md);
+    --space-5xl: 80px;
+  }
+
+  .split {
+    grid-template-columns: 1fr;
+    gap: var(--space-xl);
+  }
+
+  .grid--2,
+  .grid--3,
+  .grid--4 {
+    grid-template-columns: 1fr;
+  }
+
+  .grid--auto {
+    grid-template-columns: 1fr;
+  }
+
+  .section {
+    padding-block: var(--space-4xl);
+  }
+
+  .section__header {
+    margin-bottom: var(--space-2xl);
+  }
+
+  .hide-mobile {
+    display: none !important;
+  }
+}
+
+/* ── Tablet: 768px+ ── */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .grid--3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid--4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hide-tablet {
+    display: none !important;
+  }
+}
+
+/* ── Laptop: 1024px+ ── */
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .hide-laptop {
+    display: none !important;
+  }
+}
+
+/* ── Desktop: 1440px+ ── */
+@media (min-width: 1440px) {
+  .hide-desktop {
+    display: none !important;
+  }
+}

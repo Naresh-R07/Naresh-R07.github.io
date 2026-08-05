@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Programming Foundations",
+    "description": "Started with Python and C. Built foundations in algorithms, data structures, and problem-solving.",
+    "date": "ORIGIN",
+    "type": "education"
+  },
+  {
+    "title": "Web Development",
+    "description": "Full-stack development with React, Node.js, Flask. Built web applications from scratch.",
+    "date": "PHASE 02",
+    "type": "skill"
+  },
+  {
+    "title": "Cybersecurity",
+    "description": "Dove into offensive security. Mastered Burp Suite, Nmap, Metasploit. Started hunting vulnerabilities.",
+    "date": "PHASE 03",
+    "type": "skill"
+  },
+  {
+    "title": "CTF Competitions",
+    "description": "Competed on TryHackMe, HackTheBox, PicoCTF. Developed CTF challenges. Placed 8th at Root Access 2k26.",
+    "date": "PHASE 04",
+    "type": "achievement"
+  },
+  {
+    "title": "AI Security Research",
+    "description": "Researching LLM vulnerabilities, prompt injection, AI red teaming. Building secure AI applications and agents.",
+    "date": "PHASE 05",
+    "type": "research"
+  },
+  {
+    "title": "Challenge Development",
+    "description": "Creating CTF challenges, security tools, and contributing to the offensive security community.",
+    "date": "NOW",
+    "type": "current"
+  }
+]

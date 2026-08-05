@@ -235,9 +235,14 @@
           card.innerHTML = `
             <div class="project-card__image"><span class="text-icon">${project.icon}</span></div>
             <div class="project-card__body">
-              <span class="project-card__category">${project.category}</span>
+              <div class="project-card__meta">
+                <span class="project-card__category">${project.category}</span>
+                ${project.status ? `<span class="project-card__status">${project.status}</span>` : ''}
+                ${project.year ? `<span class="project-card__year">${project.year}</span>` : ''}
+              </div>
               <h3 class="project-card__title">${project.title}</h3>
               <p class="project-card__desc">${project.description}</p>
+              ${project.details ? `<p class="project-card__details">${project.details}</p>` : ''}
               <div class="project-card__tech">
                 ${project.tech.map(t => `<span class="badge">${t}</span>`).join('')}
               </div>

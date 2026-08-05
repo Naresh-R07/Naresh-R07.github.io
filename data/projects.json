@@ -3,72 +3,96 @@
     "title": "VulnzxScanX",
     "category": "Security Tool",
     "description": "Multi-interface vulnerability scanner aggregator using Nmap. Supports CLI, Web Dashboard, and GUI with IP rotation via Tor.",
+    "details": "Automates network reconnaissance with Nmap script engine. Aggregates results across interfaces. Tor integration for IP rotation and anonymity during scans.",
     "tech": ["Python", "Flask", "Nmap", "Tkinter", "Tor"],
     "icon": "SEC",
     "github": "https://github.com/Naresh-R07/VulnzxScanX",
-    "featured": true
+    "featured": true,
+    "status": "Active",
+    "year": "2025"
   },
   {
     "title": "Identity-AI",
     "category": "AI Security",
     "description": "Behavioral threat detection system that analyzes authentication logs to detect suspicious activity using statistical baselining.",
+    "details": "Statistical baselining of user authentication patterns. Anomaly scoring with Z-score and IQR methods. Real-time alert generation for deviations from normal behavior.",
     "tech": ["Python", "Flask", "JavaScript", "Statistical Analysis"],
     "icon": "AI",
     "github": "https://github.com/Naresh-R07/Identity-AI",
-    "featured": true
+    "featured": true,
+    "status": "Active",
+    "year": "2025"
   },
   {
     "title": "ML CTF Challenges",
     "category": "CTF / AI",
     "description": "AI/ML security CTF challenges covering model attacks, LLM exploitation, and AI Agent exploitation techniques.",
+    "details": "Hands-on challenges for adversarial ML: model extraction, prompt injection, data poisoning, evasion attacks. Designed for red teamers entering AI security.",
     "tech": ["Python", "Machine Learning", "AI Security"],
     "icon": "CTF",
     "github": "https://github.com/Naresh-R07/Machine_Learning_CTF_Challenges",
-    "featured": true
+    "featured": true,
+    "status": "Completed",
+    "year": "2025"
   },
   {
     "title": "Claude-Red",
     "category": "Offensive AI",
     "description": "Curated library of offensive security skills designed for the Claude skills system. Expert-level methodology for security testing.",
+    "details": "Structured skill definitions for Claude covering reconnaissance, exploitation, privilege escalation, and lateral movement. Maps to MITRE ATT&CK framework.",
     "tech": ["Python", "Claude API", "Security"],
     "icon": "OFF",
     "github": "https://github.com/Naresh-R07/Claude-Red",
-    "featured": true
+    "featured": true,
+    "status": "Active",
+    "year": "2026"
   },
   {
     "title": "neo-profile-scribe",
     "category": "Web Development",
     "description": "Profile generation tool built with React, TypeScript, Vite, and Tailwind CSS.",
+    "details": "Dynamic portfolio generator with template engine. Exports static HTML from JSON data. Responsive design with dark/light themes.",
     "tech": ["React", "TypeScript", "Vite", "Tailwind CSS"],
     "icon": "WEB",
     "github": "https://github.com/Naresh-R07/neo-profile-scribe",
-    "featured": false
+    "featured": false,
+    "status": "Completed",
+    "year": "2025"
   },
   {
     "title": "face-recognition-app",
     "category": "AI",
     "description": "Face recognition application using machine learning.",
-    "tech": ["Python", "Machine Learning"],
+    "details": "Real-time face detection and recognition using OpenCV and dlib. Embedding-based matching with configurable confidence thresholds.",
+    "tech": ["Python", "Machine Learning", "OpenCV"],
     "icon": "AI",
     "github": "https://github.com/Naresh-R07/face-recognition-app",
-    "featured": false
+    "featured": false,
+    "status": "Completed",
+    "year": "2024"
   },
   {
     "title": "India-Accelerator-OpenXAI-2025",
     "category": "AI / Open Source",
     "description": "OpenXAI accelerator project for AI research and development.",
-    "tech": ["TypeScript", "AI"],
+    "details": "Open-source AI research initiative. Contributed to explainable AI frameworks and model interpretability tools for production systems.",
+    "tech": ["TypeScript", "AI", "Open Source"],
     "icon": "AI",
     "github": "https://github.com/Naresh-R07/India-Accelerator-OpenXAI-2025",
-    "featured": false
+    "featured": false,
+    "status": "Completed",
+    "year": "2025"
   },
   {
     "title": "Root-Access-2k26",
     "category": "CTF",
     "description": "CTF write-ups by Team D3ds3c. 8th place finish.",
-    "tech": ["Security", "CTF"],
+    "details": "Comprehensive write-ups covering web exploitation, reverse engineering, cryptography, and forensics challenges from Root Access CTF 2026.",
+    "tech": ["Security", "CTF", "Write-ups"],
     "icon": "CTF",
     "github": "https://github.com/Naresh-R07/Root-Access-2k26",
-    "featured": false
+    "featured": false,
+    "status": "Completed",
+    "year": "2026"
   }
 ]

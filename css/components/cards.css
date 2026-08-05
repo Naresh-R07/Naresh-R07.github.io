@@ -85,10 +85,22 @@
 .research-card {
   display: flex;
   flex-direction: column;
+  aspect-ratio: 1;
+  overflow: hidden;
+  padding: var(--space-lg);
 }
 
 .research-card h4 {
   margin-bottom: var(--space-sm);
+  flex-shrink: 0;
+}
+
+.research-card p {
+  flex: 1;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
 }
 
 /* -- Project Card -- */
@@ -98,6 +110,9 @@
   border-color: #505050 #000000 #000000 #505050;
   overflow: hidden;
   transition: none;
+  aspect-ratio: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .project-card:hover {
@@ -106,7 +121,7 @@
 
 .project-card__image {
   width: 100%;
-  height: 160px;
+  height: 120px;
   background: var(--surface-2);
   display: flex;
   align-items: center;
@@ -116,6 +131,7 @@
   position: relative;
   border-bottom: 3px solid;
   border-color: #000000 #505050 #505050 #000000;
+  flex-shrink: 0;
 }
 
 .project-card__image img {
@@ -126,6 +142,10 @@
 
 .project-card__body {
   padding: var(--space-lg);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
 }
 
 .project-card__category {
@@ -147,6 +167,10 @@
   color: var(--text-tertiary);
   margin-bottom: var(--space-md);
   line-height: 1.5;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .project-card__tech {

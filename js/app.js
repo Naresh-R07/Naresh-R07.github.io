@@ -225,7 +225,7 @@
     const grid = document.getElementById('projects-grid');
     if (!grid) return;
 
-    fetch('data/projects.json')
+    fetch('data/projects.json?v=2')
       .then(r => r.json())
       .then(projects => {
         projects.forEach((project, i) => {
@@ -233,7 +233,7 @@
           card.className = 'project-card reveal';
           card.style.transitionDelay = (i * 50) + 'ms';
           card.innerHTML = `
-            <div class="project-card__image">${project.icon}</div>
+            <div class="project-card__image"><span class="text-icon">${project.icon}</span></div>
             <div class="project-card__body">
               <span class="project-card__category">${project.category}</span>
               <h3 class="project-card__title">${project.title}</h3>
@@ -266,16 +266,16 @@
 
   function renderFallbackProjects(grid) {
     const projects = [
-      { title: 'VulnzxScanX', category: 'Security Tool', description: 'Multi-interface vulnerability scanner using Nmap with CLI, Web, and GUI.', tech: ['Python', 'Flask', 'Nmap'], icon: '🔍', github: 'https://github.com/Naresh-R07/VulnzxScanX' },
-      { title: 'Identity-AI', category: 'AI Security', description: 'Behavioral threat detection from authentication logs.', tech: ['Python', 'Flask', 'JS'], icon: '🛡️', github: 'https://github.com/Naresh-R07/Identity-AI' },
-      { title: 'ML CTF Challenges', category: 'CTF / AI', description: 'AI/ML security CTF challenges.', tech: ['Python', 'ML', 'AI'], icon: '🤖', github: 'https://github.com/Naresh-R07/Machine_Learning_CTF_Challenges' },
-      { title: 'Claude-Red', category: 'Offensive AI', description: 'Offensive security skills for Claude.', tech: ['Python', 'Claude'], icon: '⚔️', github: 'https://github.com/Naresh-R07/Claude-Red' }
+      { title: 'VulnzxScanX', category: 'Security Tool', description: 'Multi-interface vulnerability scanner using Nmap with CLI, Web, and GUI.', tech: ['Python', 'Flask', 'Nmap'], icon: 'SEC', github: 'https://github.com/Naresh-R07/VulnzxScanX' },
+      { title: 'Identity-AI', category: 'AI Security', description: 'Behavioral threat detection from authentication logs.', tech: ['Python', 'Flask', 'JS'], icon: 'AI', github: 'https://github.com/Naresh-R07/Identity-AI' },
+      { title: 'ML CTF Challenges', category: 'CTF / AI', description: 'AI/ML security CTF challenges.', tech: ['Python', 'ML', 'AI'], icon: 'CTF', github: 'https://github.com/Naresh-R07/Machine_Learning_CTF_Challenges' },
+      { title: 'Claude-Red', category: 'Offensive AI', description: 'Offensive security skills for Claude.', tech: ['Python', 'Claude'], icon: 'OFF', github: 'https://github.com/Naresh-R07/Claude-Red' }
     ];
     projects.forEach((p, i) => {
       const card = document.createElement('div');
       card.className = 'project-card reveal is-visible';
-      card.innerHTML = `
-        <div class="project-card__image">${p.icon}</div>
+        card.innerHTML = `
+        <div class="project-card__image"><span class="text-icon">${p.icon}</span></div>
         <div class="project-card__body">
           <span class="project-card__category">${p.category}</span>
           <h3 class="project-card__title">${p.title}</h3>
@@ -345,7 +345,7 @@
     const timeline = document.getElementById('experience-timeline');
     if (!timeline) return;
 
-    fetch('data/experience.json')
+    fetch('data/experience.json?v=2')
       .then(r => r.json())
       .then(items => {
         timeline.innerHTML = '<div class="timeline__line" aria-hidden="true"></div>';
@@ -384,7 +384,7 @@
     const grid = document.getElementById('blog-grid');
     if (!grid) return;
 
-    fetch('data/blog.json')
+    fetch('data/blog.json?v=2')
       .then(r => r.json())
       .then(posts => {
         posts.forEach((post, i) => {

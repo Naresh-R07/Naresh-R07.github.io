@@ -7,7 +7,7 @@
   margin: 0 auto;
   padding: var(--space-lg);
   background: var(--surface-1);
-  border: 2px solid;
+  border: 3px solid;
   border-color: #505050 #000000 #000000 #505050;
   text-align: center;
 }
@@ -45,7 +45,7 @@
   flex: 1;
   padding: var(--space-xs) var(--space-sm);
   background: #000000;
-  border: 2px solid;
+  border: 3px solid;
   border-color: #000000 #505050 #505050 #000000;
   font-family: var(--font-mono);
   font-size: 0.8125rem;

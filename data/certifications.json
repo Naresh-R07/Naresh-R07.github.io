@@ -7,28 +7,28 @@
         "issuer": "Google",
         "date": "2025",
         "file": "cert/google-cybersecurity.pdf",
-        "icon": "🛡️"
+        "icon": "SEC"
       },
       {
         "title": "Cisco Ethical Hacker",
         "issuer": "Cisco",
         "date": "2025",
         "file": "cert/cisco-ethical-hacker.pdf",
-        "icon": "🔓"
+        "icon": "PEN"
       },
       {
         "title": "Introduction to Cybersecurity",
         "issuer": "Cisco",
         "date": "2025",
         "file": "cert/cisco-intro-to-cybersecurity.pdf",
-        "icon": "🔐"
+        "icon": "SEC"
       },
       {
         "title": "CCNA — Introduction to Networks",
         "issuer": "Cisco",
         "date": "2025",
         "file": "cert/cisco-ccna-intro-to-networks.pdf",
-        "icon": "🌐"
+        "icon": "NET"
       }
     ]
   },
@@ -40,14 +40,14 @@
         "issuer": "Anthropic",
         "date": "2025",
         "file": null,
-        "icon": "🤖"
+        "icon": "AI"
       },
       {
         "title": "Intro to Model Context Protocol",
         "issuer": "Anthropic",
         "date": "2025",
         "file": null,
-        "icon": "🔗"
+        "icon": "MCP"
       }
     ]
   },
@@ -59,7 +59,7 @@
         "issuer": "MongoDB",
         "date": "2025",
         "file": "cert/mongodb-security.pdf",
-        "icon": "🍃"
+        "icon": "DB"
       }
     ]
   },
@@ -71,7 +71,7 @@
         "issuer": "Team D3ds3c",
         "date": "2026",
         "file": "cert/root-access-ctf-8th.pdf",
-        "icon": "🏆"
+        "icon": "CTF"
       }
     ]
   }

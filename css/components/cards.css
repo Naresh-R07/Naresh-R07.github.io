@@ -5,7 +5,7 @@
 /* -- Profile Card -- */
 .profile-card {
   background: var(--surface-1);
-  border: 2px solid;
+  border: 3px solid;
   border-color: #505050 #000000 #000000 #505050;
   padding: var(--space-xl);
 }
@@ -16,7 +16,7 @@
   gap: var(--space-md);
   margin-bottom: var(--space-xl);
   padding-bottom: var(--space-lg);
-  border-bottom: 2px solid;
+  border-bottom: 3px solid;
   border-color: #000000 #505050 #505050 #000000;
 }
 
@@ -30,7 +30,7 @@
 .profile-card__avatar-ring {
   position: absolute;
   inset: -3px;
-  border: 2px solid var(--primary);
+  border: 3px solid var(--primary);
 }
 
 .profile-card__avatar-text {
@@ -94,7 +94,7 @@
 /* -- Project Card -- */
 .project-card {
   background: var(--surface-1);
-  border: 2px solid;
+  border: 3px solid;
   border-color: #505050 #000000 #000000 #505050;
   overflow: hidden;
   transition: none;
@@ -114,7 +114,7 @@
   font-size: 2.5rem;
   overflow: hidden;
   position: relative;
-  border-bottom: 2px solid;
+  border-bottom: 3px solid;
   border-color: #000000 #505050 #505050 #000000;
 }
 
@@ -164,7 +164,7 @@
 /* -- GitHub Repo Card -- */
 .repo-card {
   background: var(--surface-1);
-  border: 2px solid;
+  border: 3px solid;
   border-color: #505050 #000000 #000000 #505050;
   padding: var(--space-lg);
   transition: none;
@@ -198,7 +198,7 @@
 /* -- Blog Card -- */
 .blog-card {
   background: var(--surface-1);
-  border: 2px solid;
+  border: 3px solid;
   border-color: #505050 #000000 #000000 #505050;
   padding: var(--space-xl);
   transition: none;
@@ -244,7 +244,7 @@
 .achievement {
   padding: var(--space-xl);
   background: var(--surface-1);
-  border: 2px solid;
+  border: 3px solid;
   border-color: #505050 #000000 #000000 #505050;
 }
 
@@ -274,7 +274,7 @@
   text-align: center;
   padding: var(--space-lg);
   background: var(--surface-1);
-  border: 2px solid;
+  border: 3px solid;
   border-color: #505050 #000000 #000000 #505050;
 }
 

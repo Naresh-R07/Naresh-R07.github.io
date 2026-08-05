@@ -14,7 +14,7 @@
 
 .nav.is-scrolled {
   background: #000080;
-  border-bottom: 2px solid;
+  border-bottom: 3px solid;
   border-color: #505050 #000000 #000000 #505050;
   padding: var(--space-xs) 0;
 }

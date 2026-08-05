@@ -77,16 +77,16 @@ button {
 
 /* ── Win95 3D Border Helpers ── */
 .win95-raised {
-  border: 2px solid;
+  border: 3px solid;
   border-color: #505050 #000000 #000000 #505050;
 }
 
 .win95-sunken {
-  border: 2px solid;
+  border: 3px solid;
   border-color: #000000 #505050 #505050 #000000;
 }
 
 .win95-etched {
-  border: 2px solid;
+  border: 3px solid;
   border-color: #404040 #505050 #505050 #404040;
 }

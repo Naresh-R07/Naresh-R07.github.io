@@ -38,7 +38,7 @@
   width: 200px;
   height: 16px;
   background: #000000;
-  border: 2px solid;
+  border: 3px solid;
   border-color: #000000 #505050 #505050 #000000;
   overflow: hidden;
   margin-bottom: var(--space-md);
@@ -118,7 +118,7 @@
 .footer {
   padding: var(--space-3xl) 0 var(--space-xl);
   background: var(--bg-secondary);
-  border-top: 2px solid;
+  border-top: 3px solid;
   border-color: #505050 #000000 #000000 #505050;
 }
 
@@ -160,7 +160,7 @@
   font-weight: 700;
   color: var(--text-tertiary);
   background: var(--surface-1);
-  border: 2px solid;
+  border: 3px solid;
   border-color: #505050 #000000 #000000 #505050;
   transition: all var(--duration-fast);
 }

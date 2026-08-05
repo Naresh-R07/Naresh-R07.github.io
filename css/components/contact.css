@@ -14,7 +14,7 @@
   gap: var(--space-md);
   padding: var(--space-lg);
   background: var(--surface-1);
-  border: 2px solid;
+  border: 3px solid;
   border-color: #505050 #000000 #000000 #505050;
   transition: none;
 }
@@ -68,7 +68,7 @@
   width: 100%;
   padding: var(--space-sm) var(--space-md);
   background: #000000;
-  border: 2px solid;
+  border: 3px solid;
   border-color: #000000 #505050 #505050 #000000;
   font-size: 0.875rem;
   color: #C0C0C0;

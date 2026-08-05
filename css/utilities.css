@@ -1,5 +1,5 @@
 /* ============================================
-   NEXUS — Utility Classes
+   NEXUS — Utility Classes (Win95 Style)
    ============================================ */
 
 /* ── Display ── */
@@ -56,22 +56,28 @@
   font-family: var(--font-mono);
   font-size: 0.75rem;
   font-weight: 500;
-  border-radius: var(--radius-full);
-  border: var(--border-subtle);
+  border: 2px solid;
+  border-color: #505050 #000000 #000000 #505050;
   background: var(--surface-1);
   color: var(--text-tertiary);
 }
 
 .badge--primary {
-  background: rgba(var(--primary-rgb), 0.1);
-  border-color: rgba(var(--primary-rgb), 0.2);
+  background: rgba(0, 229, 255, 0.1);
+  border-color: rgba(0, 229, 255, 0.3);
   color: var(--primary);
 }
 
 .badge--secondary {
-  background: rgba(var(--secondary-rgb), 0.1);
-  border-color: rgba(var(--secondary-rgb), 0.2);
+  background: rgba(74, 222, 128, 0.1);
+  border-color: rgba(74, 222, 128, 0.3);
   color: var(--secondary);
+}
+
+.badge--danger {
+  background: rgba(239, 68, 68, 0.1);
+  border-color: rgba(239, 68, 68, 0.3);
+  color: var(--danger);
 }
 
 /* ── Button ── */
@@ -82,43 +88,35 @@
   gap: var(--space-sm);
   padding: var(--space-sm) var(--space-lg);
   font-family: var(--font-body);
-  font-size: 0.9375rem;
-  font-weight: 500;
-  border-radius: var(--radius-md);
-  border: var(--border-subtle);
+  font-size: 0.875rem;
+  font-weight: 600;
+  border: 2px solid;
+  border-color: #505050 #000000 #000000 #505050;
   background: var(--surface-2);
   color: var(--text-primary);
   cursor: pointer;
-  transition: all var(--duration-normal) var(--ease-out);
+  transition: none;
   white-space: nowrap;
 }
 
-.btn:hover {
-  background: var(--surface-3);
-  border-color: rgba(255, 255, 255, 0.1);
-  transform: translateY(-1px);
+.btn:active {
+  border-color: #000000 #505050 #505050 #000000;
+  padding: calc(var(--space-sm) + 1px) calc(var(--space-lg) - 1px);
 }
 
 .btn--primary {
-  background: var(--primary);
-  color: var(--bg-primary);
-  border-color: var(--primary);
-  font-weight: 600;
+  background: var(--win95-blue);
+  color: #FFFFFF;
+  border-color: #505050 #000000 #000000 #505050;
 }
 
-.btn--primary:hover {
-  background: #00ccee;
-  box-shadow: var(--shadow-glow-cyan);
+.btn--primary:active {
+  border-color: #000000 #505050 #505050 #000000;
 }
 
 .btn--ghost {
-  background: transparent;
-  border-color: rgba(255, 255, 255, 0.12);
-}
-
-.btn--ghost:hover {
   background: var(--surface-1);
-  border-color: rgba(255, 255, 255, 0.2);
+  border-color: #505050 #000000 #000000 #505050;
 }
 
 .btn--sm {
@@ -128,69 +126,58 @@
 
 .btn--lg {
   padding: var(--space-md) var(--space-xl);
-  font-size: 1rem;
+  font-size: 0.9375rem;
 }
 
 /* ── Card Base ── */
 .card {
   background: var(--surface-1);
-  border: var(--border-subtle);
-  border-radius: var(--radius-lg);
+  border: 2px solid;
+  border-color: #505050 #000000 #000000 #505050;
   padding: var(--space-xl);
-  transition: all var(--duration-normal) var(--ease-out);
+  transition: none;
 }
 
 .card:hover {
-  border-color: rgba(255, 255, 255, 0.1);
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-lg);
+  border-color: #000000 #505050 #505050 #000000;
 }
 
-/* ── Glow Border ── */
+/* ── Glow Border (disabled in Win95) ── */
 .glow-border {
   position: relative;
 }
 
 .glow-border::before {
-  content: '';
-  position: absolute;
-  inset: -1px;
-  border-radius: inherit;
-  padding: 1px;
-  background: linear-gradient(
-    135deg,
-    rgba(var(--primary-rgb), 0.3),
-    transparent,
-    rgba(var(--secondary-rgb), 0.3)
-  );
-  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-  -webkit-mask-composite: xor;
-  mask-composite: exclude;
-  opacity: 0;
-  transition: opacity var(--duration-normal) var(--ease-out);
+  display: none;
 }
 
-.glow-border:hover::before {
-  opacity: 1;
-}
-
-/* ── Scrollbar ── */
+/* ── Scrollbar (Win95 style) ── */
 ::-webkit-scrollbar {
-  width: 6px;
+  width: 16px;
+  height: 16px;
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--bg-primary);
+  background: repeating-conic-gradient(#C0C0C0 0% 25%, #FFFFFF 0% 50%) 50% / 2px 2px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--surface-3);
-  border-radius: var(--radius-full);
+  background: #C0C0C0;
+  border: 2px solid;
+  border-color: #FFFFFF #808080 #808080 #FFFFFF;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--text-muted);
+  background: #D0D0D0;
+}
+
+::-webkit-scrollbar-button {
+  display: block;
+  width: 16px;
+  height: 16px;
+  background: #C0C0C0;
+  border: 2px solid;
+  border-color: #FFFFFF #808080 #808080 #FFFFFF;
 }
 
 /* ── No Select ── */
@@ -212,12 +199,13 @@
   top: -100%;
   left: var(--space-md);
   padding: var(--space-sm) var(--space-md);
-  background: var(--primary);
-  color: var(--bg-primary);
+  background: var(--win95-blue);
+  color: #FFFFFF;
   font-weight: 600;
-  border-radius: var(--radius-sm);
   z-index: var(--z-tooltip);
   transition: top var(--duration-fast);
+  border: 2px solid;
+  border-color: #505050 #000000 #000000 #505050;
 }
 
 .skip-link:focus {

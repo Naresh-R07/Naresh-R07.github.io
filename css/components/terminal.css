@@ -1,5 +1,5 @@
 /* ============================================
-   NEXUS — Terminal (Easter Egg)
+   NEXUS — Terminal (DOS Style)
    ============================================ */
 
 .terminal {
@@ -9,25 +9,22 @@
   width: 500px;
   max-width: calc(100vw - var(--space-2xl));
   height: 350px;
-  background: rgba(10, 10, 10, 0.95);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border: var(--border-subtle);
-  border-radius: var(--radius-lg);
+  background: #000000;
+  border: 2px solid;
+  border-color: #505050 #000000 #000000 #505050;
   display: flex;
   flex-direction: column;
   z-index: var(--z-modal);
   opacity: 0;
-  transform: translateY(20px) scale(0.95);
+  transform: translateY(10px);
   pointer-events: none;
-  transition: all var(--duration-normal) var(--ease-out);
+  transition: opacity 0.1s ease, transform 0.1s ease;
   overflow: hidden;
-  box-shadow: var(--shadow-xl);
 }
 
 .terminal.is-open {
   opacity: 1;
-  transform: translateY(0) scale(1);
+  transform: translateY(0);
   pointer-events: auto;
 }
 
@@ -35,42 +32,46 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: var(--space-sm) var(--space-md);
-  background: var(--surface-1);
-  border-bottom: var(--border-subtle);
+  padding: var(--space-xs) var(--space-sm);
+  background: var(--win95-blue);
+  border-bottom: 2px solid;
+  border-color: #505050 #000000 #000000 #505050;
 }
 
 .terminal__title {
   font-family: var(--font-mono);
   font-size: 0.75rem;
-  color: var(--text-muted);
+  font-weight: 700;
+  color: #FFFFFF;
 }
 
 .terminal__close {
-  width: 20px;
-  height: 20px;
+  width: 18px;
+  height: 18px;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 0.75rem;
-  color: var(--text-muted);
-  border-radius: var(--radius-xs);
-  transition: all var(--duration-fast);
+  font-weight: 700;
+  color: #000000;
+  background: #C0C0C0;
+  border: 2px solid;
+  border-color: #FFFFFF #808080 #808080 #FFFFFF;
+  transition: none;
 }
 
-.terminal__close:hover {
-  background: var(--surface-3);
-  color: var(--text-primary);
+.terminal__close:active {
+  border-color: #808080 #FFFFFF #FFFFFF #808080;
 }
 
 .terminal__output {
   flex: 1;
-  padding: var(--space-md);
+  padding: var(--space-sm);
   overflow-y: auto;
   font-family: var(--font-mono);
   font-size: 0.8125rem;
-  line-height: 1.6;
-  color: var(--text-secondary);
+  line-height: 1.5;
+  color: #C0C0C0;
 }
 
 .terminal__output-line {
@@ -78,15 +79,15 @@
 }
 
 .terminal__output-line--system {
-  color: var(--text-muted);
+  color: #808080;
 }
 
 .terminal__output-line--success {
-  color: var(--secondary);
+  color: #4ADE80;
 }
 
 .terminal__output-line--error {
-  color: var(--danger);
+  color: #EF4444;
 }
 
 .terminal__output-line--accent {
@@ -97,15 +98,16 @@
   display: flex;
   align-items: center;
   gap: var(--space-sm);
-  padding: var(--space-sm) var(--space-md);
-  border-top: var(--border-subtle);
-  background: var(--surface-1);
+  padding: var(--space-xs) var(--space-sm);
+  border-top: 2px solid;
+  border-color: #505050 #000000 #000000 #505050;
+  background: #000000;
 }
 
 .terminal__prompt {
   font-family: var(--font-mono);
-  font-size: 0.875rem;
-  color: var(--primary);
+  font-size: 0.8125rem;
+  color: #C0C0C0;
 }
 
 .terminal__input {
@@ -115,6 +117,6 @@
   outline: none;
   font-family: var(--font-mono);
   font-size: 0.8125rem;
-  color: var(--text-primary);
-  caret-color: var(--primary);
+  color: #C0C0C0;
+  caret-color: #C0C0C0;
 }

@@ -1,168 +1,76 @@
 /* ============================================
-   NEXUS — Typography
+   NEXUS — Typography (Win95 System Fonts)
    ============================================ */
-
-/* ── Font Faces (self-hosted WOFF2) ── */
-
-@font-face {
-  font-family: 'Geist';
-  src: url('../assets/fonts/geist-sans-regular.woff2') format('woff2');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Geist';
-  src: url('../assets/fonts/geist-sans-medium.woff2') format('woff2');
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Geist';
-  src: url('../assets/fonts/geist-sans-bold.woff2') format('woff2');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Inter';
-  src: url('../assets/fonts/inter-regular.woff2') format('woff2');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Inter';
-  src: url('../assets/fonts/inter-medium.woff2') format('woff2');
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Inter';
-  src: url('../assets/fonts/inter-semibold.woff2') format('woff2');
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Inter';
-  src: url('../assets/fonts/inter-bold.woff2') format('woff2');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'JetBrains Mono';
-  src: url('../assets/fonts/jetbrains-mono-regular.woff2') format('woff2');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'JetBrains Mono';
-  src: url('../assets/fonts/jetbrains-mono-medium.woff2') format('woff2');
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Space Grotesk';
-  src: url('../assets/fonts/space-grotesk-regular.woff2') format('woff2');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Space Grotesk';
-  src: url('../assets/fonts/space-grotesk-bold.woff2') format('woff2');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
 
 /* ── Font Families ── */
 
 :root {
-  --font-heading: 'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  --font-mono: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace;
-  --font-number: 'Space Grotesk', var(--font-heading);
+  --font-heading: Tahoma, 'MS Sans Serif', Arial, sans-serif;
+  --font-body: Tahoma, 'MS Sans Serif', Arial, sans-serif;
+  --font-mono: 'Courier New', Courier, monospace;
+  --font-number: Tahoma, 'MS Sans Serif', Arial, sans-serif;
 }
 
-/* ── Type Scale (1.250 ratio) ── */
+/* ── Type Scale ── */
 
 body {
   font-family: var(--font-body);
-  font-size: 1rem;
+  font-size: 13px;
   color: var(--text-secondary);
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading);
   color: var(--text-primary);
-  line-height: 1.2;
-  letter-spacing: -0.02em;
+  line-height: 1.3;
+  font-weight: 700;
 }
 
 h1 {
-  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
   font-weight: 700;
-  line-height: 1.1;
-  letter-spacing: -0.03em;
+  line-height: 1.2;
 }
 
 h2 {
-  font-size: clamp(1.75rem, 4vw, 3rem);
+  font-size: clamp(1.25rem, 3vw, 1.75rem);
   font-weight: 700;
-  line-height: 1.15;
 }
 
 h3 {
-  font-size: clamp(1.25rem, 2.5vw, 1.75rem);
+  font-size: clamp(1rem, 2vw, 1.25rem);
   font-weight: 600;
 }
 
 h4 {
-  font-size: clamp(1.125rem, 2vw, 1.375rem);
+  font-size: clamp(0.9375rem, 1.5vw, 1.125rem);
   font-weight: 600;
 }
 
 h5 {
-  font-size: 1.125rem;
-  font-weight: 500;
+  font-size: 1rem;
+  font-weight: 600;
 }
 
 h6 {
-  font-size: 1rem;
-  font-weight: 500;
+  font-size: 0.875rem;
+  font-weight: 600;
   color: var(--text-tertiary);
 }
 
 p {
   font-size: 1rem;
-  line-height: 1.7;
+  line-height: 1.6;
   color: var(--text-secondary);
 }
 
 small {
-  font-size: 0.875rem;
+  font-size: 0.8125rem;
   color: var(--text-tertiary);
 }
 
 strong {
-  font-weight: 600;
+  font-weight: 700;
   color: var(--text-primary);
 }
 
@@ -173,32 +81,29 @@ code, pre {
 code {
   font-size: 0.875em;
   background: var(--surface-2);
-  padding: 0.15em 0.4em;
-  border-radius: var(--radius-xs);
+  padding: 0.1em 0.3em;
   color: var(--primary);
+  border: 1px solid #333;
 }
 
 pre {
-  font-size: 0.875rem;
+  font-size: 0.8125rem;
   background: var(--surface-1);
-  padding: var(--space-lg);
-  border-radius: var(--radius-md);
-  border: var(--border-subtle);
+  padding: var(--space-md);
+  border: 2px solid;
+  border-color: #000000 #505050 #505050 #000000;
   overflow-x: auto;
-  line-height: 1.6;
+  line-height: 1.5;
 }
 
 pre code {
   background: none;
   padding: 0;
-  border-radius: 0;
+  border: none;
 }
 
 .text-gradient {
-  background: linear-gradient(135deg, var(--primary), var(--secondary));
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: var(--primary);
 }
 
 .text-mono {

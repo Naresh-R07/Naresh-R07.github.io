@@ -1,6 +1,5 @@
 /* ============================================
-   Naresh-R07 — Complete Application
-   Phases 2-7 Integrated
+   Naresh-R07 — Application (Win95 Theme)
    ============================================ */
 
 (function() {
@@ -15,42 +14,37 @@
   const statusText = loader?.querySelector('.loader__status');
   const loadMessages = [
     'INITIALIZING...',
-    'LOADING MODULES...',
-    'SCANNING SYSTEMS...',
-    'ESTABLISHING CONNECTION...',
-    'LOADING ASSETS...',
+    'LOADING...',
     'READY.'
   ];
 
   let progress = 0;
   const loadInterval = setInterval(() => {
-    progress += Math.random() * 25;
+    progress += Math.random() * 50;
     if (progress >= 100) {
       progress = 100;
       clearInterval(loadInterval);
-      if (statusText) statusText.textContent = loadMessages[5];
+      if (statusText) statusText.textContent = loadMessages[2];
       if (progressBar) progressBar.style.width = '100%';
       setTimeout(() => {
         if (loader) loader.classList.add('is-hidden');
         document.body.style.overflow = '';
         initAll();
-      }, 400);
+      }, 150);
     } else {
-      const idx = Math.min(Math.floor(progress / 25), loadMessages.length - 2);
+      const idx = Math.min(Math.floor(progress / 50), loadMessages.length - 2);
       if (statusText) statusText.textContent = loadMessages[idx];
       if (progressBar) progressBar.style.width = progress + '%';
     }
-  }, 200);
+  }, 80);
 
   // ════════════════════════════════════════
   // INIT ALL
   // ════════════════════════════════════════
 
   function initAll() {
-    initLenis();
     initNavigation();
     initHeroAnimations();
-    initCursorSpotlight();
     initScrollReveal();
     initSmoothScroll();
     initBentoGlow();
@@ -63,36 +57,8 @@
     initTerminal();
     initContactForm();
     initBackToTop();
-    initMagneticButtons();
-    initTiltCards();
     initFooterGame();
     initAnimeEntrance();
-  }
-
-  // ════════════════════════════════════════
-  // LENIS SMOOTH SCROLL
-  // ════════════════════════════════════════
-
-  function initLenis() {
-    if (typeof Lenis === 'undefined') return;
-    const lenis = new Lenis({
-      duration: 1.2,
-      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-      orientation: 'vertical',
-      smoothWheel: true,
-    });
-
-    function raf(time) {
-      lenis.raf(time);
-      requestAnimationFrame(raf);
-    }
-    requestAnimationFrame(raf);
-
-    // Link Lenis scroll to Intersection Observer
-    lenis.on('scroll', () => {});
-
-    // Expose for other modules
-    window.__nexusLenis = lenis;
   }
 
   // ════════════════════════════════════════
@@ -167,81 +133,44 @@
   function initHeroAnimations() {
     if (typeof anime === 'undefined') return;
 
-    // Title character stagger
-    anime.timeline({ delay: 800 })
+    anime.timeline({ delay: 200 })
       .add({
         targets: '.hero__badges .badge',
         opacity: [0, 1],
-        translateY: [15, 0],
-        delay: anime.stagger(100),
-        duration: 500,
-        easing: 'easeOutCubic'
+        translateY: [8, 0],
+        delay: anime.stagger(50),
+        duration: 200,
+        easing: 'easeOutQuad'
       })
       .add({
         targets: '.hero__title-line',
         opacity: [0, 1],
-        translateY: [30, 0],
-        delay: anime.stagger(200),
-        duration: 700,
-        easing: 'easeOutCubic'
-      }, '-=200')
+        translateY: [15, 0],
+        delay: anime.stagger(100),
+        duration: 300,
+        easing: 'easeOutQuad'
+      }, '-=100')
       .add({
         targets: '.hero__subtitle',
         opacity: [0, 1],
-        translateY: [20, 0],
-        duration: 600,
-        easing: 'easeOutCubic'
-      }, '-=300')
+        translateY: [10, 0],
+        duration: 200,
+        easing: 'easeOutQuad'
+      }, '-=150')
       .add({
         targets: '.hero__cta .btn',
         opacity: [0, 1],
-        translateY: [15, 0],
-        delay: anime.stagger(100),
-        duration: 500,
-        easing: 'easeOutCubic'
-      }, '-=200')
+        translateY: [8, 0],
+        delay: anime.stagger(50),
+        duration: 200,
+        easing: 'easeOutQuad'
+      }, '-=100')
       .add({
         targets: '.hero__scroll',
         opacity: [0, 1],
-        duration: 800,
-        easing: 'easeOutCubic'
-      }, '-=100');
-
-    // Grid parallax on scroll
-    const heroGrid = document.querySelector('.hero__grid');
-    if (heroGrid) {
-      window.addEventListener('scroll', () => {
-        const scrollY = window.scrollY;
-        if (scrollY < window.innerHeight) {
-          heroGrid.style.transform = `translateY(${scrollY * 0.3}px)`;
-        }
-      }, { passive: true });
-    }
-  }
-
-  // ════════════════════════════════════════
-  // CURSOR SPOTLIGHT
-  // ════════════════════════════════════════
-
-  function initCursorSpotlight() {
-    const spotlight = document.getElementById('cursor-spotlight');
-    if (!spotlight || window.matchMedia('(max-width: 767px)').matches) return;
-
-    let mouseX = 0, mouseY = 0;
-    let spotX = 0, spotY = 0;
-
-    document.addEventListener('mousemove', (e) => {
-      mouseX = e.clientX;
-      mouseY = e.clientY;
-    });
-
-    function animate() {
-      spotX += (mouseX - spotX) * 0.1;
-      spotY += (mouseY - spotY) * 0.1;
-      spotlight.style.transform = `translate(${spotX - 150}px, ${spotY - 150}px)`;
-      requestAnimationFrame(animate);
-    }
-    requestAnimationFrame(animate);
+        duration: 300,
+        easing: 'easeOutQuad'
+      }, '-=50');
   }
 
   // ════════════════════════════════════════
@@ -259,7 +188,7 @@
           observer.unobserve(entry.target);
         }
       });
-    }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+    }, { threshold: 0.1, rootMargin: '0px 0px -30px 0px' });
 
     reveals.forEach(el => observer.observe(el));
   }
@@ -274,31 +203,19 @@
         e.preventDefault();
         const target = document.querySelector(this.getAttribute('href'));
         if (target) {
-          const offset = 80;
+          const offset = 60;
           const targetPos = target.getBoundingClientRect().top + window.scrollY - offset;
-          if (window.__nexusLenis) {
-            window.__nexusLenis.scrollTo(targetPos, { duration: 1.2 });
-          } else {
-            window.scrollTo({ top: targetPos, behavior: 'smooth' });
-          }
+          window.scrollTo({ top: targetPos, behavior: 'auto' });
         }
       });
     });
   }
 
   // ════════════════════════════════════════
-  // BENTO GRID GLOW
+  // BENTO GRID GLOW (disabled in Win95)
   // ════════════════════════════════════════
 
-  function initBentoGlow() {
-    document.querySelectorAll('.bento__item').forEach(item => {
-      item.addEventListener('mousemove', (e) => {
-        const rect = item.getBoundingClientRect();
-        item.style.setProperty('--mouse-x', (e.clientX - rect.left) + 'px');
-        item.style.setProperty('--mouse-y', (e.clientY - rect.top) + 'px');
-      });
-    });
-  }
+  function initBentoGlow() {}
 
   // ════════════════════════════════════════
   // PROJECT CARDS
@@ -314,7 +231,7 @@
         projects.forEach((project, i) => {
           const card = document.createElement('div');
           card.className = 'project-card reveal';
-          card.style.transitionDelay = (i * 100) + 'ms';
+          card.style.transitionDelay = (i * 50) + 'ms';
           card.innerHTML = `
             <div class="project-card__image">${project.icon}</div>
             <div class="project-card__body">
@@ -332,7 +249,6 @@
           grid.appendChild(card);
         });
 
-        // Observe new cards
         const observer = new IntersectionObserver((entries) => {
           entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -344,7 +260,6 @@
         grid.querySelectorAll('.reveal').forEach(el => observer.observe(el));
       })
       .catch(() => {
-        // Fallback: render from inline data
         renderFallbackProjects(grid);
       });
   }
@@ -392,14 +307,12 @@
       { title: 'Steganography Decode', category: 'forensics', difficulty: 'Easy', desc: 'Hidden data in image and audio files.' }
     ];
 
-    // Render challenges
     function renderCtf(filter) {
       grid.innerHTML = '';
       const filtered = filter === 'all' ? ctfChallenges : ctfChallenges.filter(c => c.category === filter);
-      filtered.forEach((challenge, i) => {
+      filtered.forEach((challenge) => {
         const card = document.createElement('div');
         card.className = 'card ctf-card';
-        card.style.animationDelay = (i * 80) + 'ms';
         const diffColor = challenge.difficulty === 'Easy' ? 'var(--secondary)' : challenge.difficulty === 'Medium' ? 'var(--warning)' : 'var(--danger)';
         card.innerHTML = `
           <div class="flex flex--between mb-md">
@@ -407,7 +320,7 @@
             <span class="badge" style="color:${diffColor};border-color:${diffColor}">${challenge.difficulty}</span>
           </div>
           <h4 class="mb-sm">${challenge.title}</h4>
-          <p class="text-tertiary" style="font-size:0.875rem">${challenge.desc}</p>
+          <p class="text-tertiary" style="font-size:0.8125rem">${challenge.desc}</p>
         `;
         grid.appendChild(card);
       });
@@ -439,7 +352,7 @@
         items.forEach((item, i) => {
           const el = document.createElement('div');
           el.className = 'timeline__item reveal';
-          el.style.transitionDelay = (i * 100) + 'ms';
+          el.style.transitionDelay = (i * 50) + 'ms';
           el.innerHTML = `
             <div class="timeline__marker"></div>
             <div class="timeline__card">
@@ -477,7 +390,7 @@
         posts.forEach((post, i) => {
           const card = document.createElement('div');
           card.className = 'blog-card reveal';
-          card.style.transitionDelay = (i * 100) + 'ms';
+          card.style.transitionDelay = (i * 50) + 'ms';
           card.innerHTML = `
             <span class="blog-card__date">${post.date} · ${post.readingTime}</span>
             <h4 class="blog-card__title">${post.title}</h4>
@@ -511,7 +424,6 @@
     const cacheKey = 'nexus_github_';
     const oneHour = 3600000;
 
-    // User stats
     const userCache = localStorage.getItem(cacheKey + 'user');
     const userTime = localStorage.getItem(cacheKey + 'user_time');
 
@@ -528,7 +440,6 @@
         .catch(() => renderUserStats({ public_repos: 15, stargazers_count: 0, followers: 1 }));
     }
 
-    // Repos
     if (reposGrid) {
       const reposCache = localStorage.getItem(cacheKey + 'repos');
       const reposTime = localStorage.getItem(cacheKey + 'repos_time');
@@ -607,7 +518,7 @@
 
   function animateCounter(el) {
     const target = parseInt(el.dataset.target);
-    const duration = 2000;
+    const duration = 800;
     const start = performance.now();
 
     function update(now) {
@@ -658,7 +569,7 @@
       if (isOpen && input) {
         input.focus();
         if (!output.innerHTML) {
-          printLine('Naresh-R07 Terminal v1.0', 'system');
+          printLine('C:\\NEXUS> Naresh-R07 Terminal v1.0', 'system');
           printLine('Type "help" for available commands.\n', 'system');
         }
       }
@@ -691,14 +602,14 @@
         projects: () => { printLine('Featured Projects:', 'success'); printLine('  1. VulnzxScanX — Vulnerability Scanner'); printLine('  2. Identity-AI — Behavioral Threat Detection'); printLine('  3. ML CTF Challenges — AI/ML Security'); printLine('  4. Claude-Red — Offensive Security Skills'); },
         github: () => printLine('GitHub: https://github.com/Naresh-R07', 'accent'),
         contact: () => { printLine('Contact:', 'success'); printLine('  GitHub:  github.com/Naresh-R07'); printLine('  LinkedIn: naresh-rajj-s-526564327'); },
-        whoami: () => { printLine('nexus@research:~$ NARESH RAJJ S', 'success'); printLine('AI Security Researcher | Red Team | SOC'); },
+        whoami: () => { printLine('C:\\NEXUS> NARESH RAJJ S', 'success'); printLine('AI Security Researcher | Red Team | SOC'); },
         clear: () => { if (output) output.innerHTML = ''; }
       };
       if (cmd === '') return;
       if (commands[cmd]) {
         commands[cmd]();
       } else {
-        printLine('Command not found: ' + cmd, 'error');
+        printLine('Bad command or file name: ' + cmd, 'error');
         printLine('Type "help" for available commands.', 'system');
       }
     }
@@ -715,7 +626,6 @@
     form.addEventListener('submit', (e) => {
       e.preventDefault();
 
-      // Honeypot check
       const honeypot = form.querySelector('input[name="website"]');
       if (honeypot && honeypot.value) return;
 
@@ -729,7 +639,6 @@
         return;
       }
 
-      // Try EmailJS first, fallback to mailto
       const mailtoLink = `mailto:naresh@example.com?subject=${encodeURIComponent(subject || 'Portfolio Contact from ' + name)}&body=${encodeURIComponent('Name: ' + name + '\nEmail: ' + email + '\n\n' + message)}`;
       window.location.href = mailtoLink;
       showToast('Opening email client...', 'success');
@@ -743,17 +652,17 @@
     toast.textContent = message;
     toast.style.cssText = `
       position: fixed; bottom: 24px; left: 50%; transform: translateX(-50%);
-      padding: 12px 24px; border-radius: 8px; font-size: 0.875rem;
-      background: ${type === 'error' ? 'var(--danger)' : 'var(--secondary)'};
-      color: var(--bg-primary); font-weight: 600; z-index: 9999;
-      animation: fadeInUp 0.3s ease;
+      padding: 8px 16px; font-size: 0.8125rem; font-weight: 600;
+      background: ${type === 'error' ? '#EF4444' : '#000080'};
+      color: #FFFFFF; z-index: 9999;
+      border: 2px solid; border-color: #505050 #000000 #000000 #505050;
     `;
     document.body.appendChild(toast);
     setTimeout(() => {
       toast.style.opacity = '0';
-      toast.style.transition = 'opacity 0.3s';
-      setTimeout(() => toast.remove(), 300);
-    }, 3000);
+      toast.style.transition = 'opacity 0.1s';
+      setTimeout(() => toast.remove(), 100);
+    }, 2000);
   }
 
   // ════════════════════════════════════════
@@ -764,59 +673,9 @@
     const btn = document.getElementById('back-to-top');
     if (btn) {
       btn.addEventListener('click', () => {
-        if (window.__nexusLenis) {
-          window.__nexusLenis.scrollTo(0, { duration: 1.5 });
-        } else {
-          window.scrollTo({ top: 0, behavior: 'smooth' });
-        }
+        window.scrollTo({ top: 0, behavior: 'auto' });
       });
     }
-  }
-
-  // ════════════════════════════════════════
-  // MAGNETIC BUTTONS
-  // ════════════════════════════════════════
-
-  function initMagneticButtons() {
-    if (window.matchMedia('(max-width: 767px)').matches) return;
-
-    document.querySelectorAll('.btn--primary').forEach(btn => {
-      btn.addEventListener('mousemove', (e) => {
-        const rect = btn.getBoundingClientRect();
-        const x = e.clientX - rect.left - rect.width / 2;
-        const y = e.clientY - rect.top - rect.height / 2;
-        btn.style.transform = `translate(${x * 0.2}px, ${y * 0.2}px)`;
-      });
-      btn.addEventListener('mouseleave', () => {
-        btn.style.transform = '';
-      });
-    });
-  }
-
-  // ════════════════════════════════════════
-  // 3D TILT CARDS
-  // ════════════════════════════════════════
-
-  function initTiltCards() {
-    if (window.matchMedia('(max-width: 767px)').matches) return;
-
-    document.querySelectorAll('.cert-card, .project-card').forEach(card => {
-      card.addEventListener('mousemove', (e) => {
-        const rect = card.getBoundingClientRect();
-        const x = (e.clientX - rect.left) / rect.width;
-        const y = (e.clientY - rect.top) / rect.height;
-        const tiltX = (y - 0.5) * 8;
-        const tiltY = (x - 0.5) * -8;
-        card.style.transform = `perspective(800px) rotateX(${tiltX}deg) rotateY(${tiltY}deg) translateY(-4px)`;
-      });
-      card.addEventListener('mouseleave', () => {
-        card.style.transform = '';
-        card.style.transition = 'transform 0.5s ease';
-      });
-      card.addEventListener('mouseenter', () => {
-        card.style.transition = 'transform 0.1s ease';
-      });
-    });
   }
 
   // ════════════════════════════════════════
@@ -843,13 +702,13 @@
 
     gameContainer.innerHTML = `
       <div class="game-header">
-        <span class="game-label">⚡ CYBER CHALLENGE</span>
-        <button id="game-next" class="btn btn--ghost btn--sm" style="font-size:0.7rem;padding:2px 8px;">NEXT</button>
+        <span class="game-label">> CYBER CHALLENGE</span>
+        <button id="game-next" class="btn btn--ghost btn--sm" style="font-size:0.6875rem;padding:2px 6px;">NEXT</button>
       </div>
       <p class="game-question">${currentPuzzle.q}</p>
       <div class="game-input-row">
         <input id="game-answer" class="game-input" type="text" placeholder="Your answer..." autocomplete="off">
-        <button id="game-submit" class="btn btn--primary btn--sm">▶</button>
+        <button id="game-submit" class="btn btn--primary btn--sm">></button>
       </div>
       <p id="game-feedback" class="game-feedback"></p>
     `;
@@ -876,14 +735,14 @@
       attempts++;
 
       if (userAnswer === currentPuzzle.a) {
-        feedback.textContent = '✓ Correct!';
+        feedback.textContent = 'Correct!';
         feedback.className = 'game-feedback game-feedback--success';
         answerInput.value = '';
       } else if (attempts >= 3) {
-        feedback.textContent = '✗ Answer: ' + currentPuzzle.a + ' (' + currentPuzzle.hint + ')';
+        feedback.textContent = 'Answer: ' + currentPuzzle.a + ' (' + currentPuzzle.hint + ')';
         feedback.className = 'game-feedback game-feedback--error';
       } else {
-        feedback.textContent = '✗ Try again. Hint: ' + currentPuzzle.hint;
+        feedback.textContent = 'Try again. Hint: ' + currentPuzzle.hint;
         feedback.className = 'game-feedback game-feedback--error';
       }
     }
@@ -896,7 +755,6 @@
   function initAnimeEntrance() {
     if (typeof anime === 'undefined') return;
 
-    // Section label animations
     const labels = document.querySelectorAll('.section__label');
     if (labels.length) {
       const labelObserver = new IntersectionObserver((entries) => {
@@ -905,9 +763,9 @@
             anime({
               targets: entry.target,
               opacity: [0, 1],
-              translateX: [-20, 0],
-              duration: 600,
-              easing: 'easeOutCubic'
+              translateX: [-10, 0],
+              duration: 300,
+              easing: 'easeOutQuad'
             });
             labelObserver.unobserve(entry.target);
           }
@@ -919,28 +777,6 @@
       });
     }
 
-    // Stagger badge animations
-    const badgeContainers = document.querySelectorAll('.bento__tags');
-    if (badgeContainers.length) {
-      const badgeObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            anime({
-              targets: entry.target.querySelectorAll('.badge'),
-              opacity: [0, 1],
-              scale: [0.8, 1],
-              delay: anime.stagger(50),
-              duration: 400,
-              easing: 'easeOutCubic'
-            });
-            badgeObserver.unobserve(entry.target);
-          }
-        });
-      }, { threshold: 0.3 });
-      badgeContainers.forEach(el => badgeObserver.observe(el));
-    }
-
-    // Achievement number count-up with anime
     const achievementNums = document.querySelectorAll('.achievement__number');
     if (achievementNums.length) {
       const achObserver = new IntersectionObserver((entries) => {
@@ -951,7 +787,7 @@
               targets: entry.target,
               innerText: [0, target],
               round: 1,
-              duration: 2000,
+              duration: 800,
               easing: 'easeOutExpo'
             });
             achObserver.unobserve(entry.target);
@@ -960,46 +796,6 @@
       }, { threshold: 0.5 });
       achievementNums.forEach(el => achObserver.observe(el));
     }
-
-    // Timeline marker pulse
-    const markers = document.querySelectorAll('.timeline__marker');
-    markers.forEach(marker => {
-      marker.addEventListener('mouseenter', () => {
-        anime({
-          targets: marker,
-          scale: [1, 1.4, 1],
-          duration: 400,
-          easing: 'easeOutCubic'
-        });
-      });
-    });
   }
-
-  // ════════════════════════════════════════
-  // PARTICLE SYSTEM (Hero)
-  // ════════════════════════════════════════
-
-  (function initHeroParticles() {
-    const container = document.querySelector('.hero__particles');
-    if (!container) return;
-    for (let i = 0; i < 30; i++) {
-      const particle = document.createElement('div');
-      particle.style.cssText = `
-        position: absolute;
-        width: ${Math.random() * 3 + 1}px;
-        height: ${Math.random() * 3 + 1}px;
-        background: rgba(0, 229, 255, ${Math.random() * 0.4 + 0.1});
-        border-radius: 50%;
-        left: ${Math.random() * 100}%;
-        top: ${Math.random() * 100}%;
-        --tx: ${(Math.random() - 0.5) * 200}px;
-        --ty: ${(Math.random() - 0.5) * 200}px;
-        animation: particleFloat ${Math.random() * 10 + 10}s linear infinite;
-        animation-delay: ${Math.random() * 10}s;
-        pointer-events: none;
-      `;
-      container.appendChild(particle);
-    }
-  })();
 
 })();

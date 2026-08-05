@@ -1,26 +1,7 @@
 /* ============================================
-   NEXUS — Cursor Spotlight
+   NEXUS — Cursor Spotlight (Hidden in Win95)
    ============================================ */
 
 .cursor-spotlight {
-  position: fixed;
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
-  background: radial-gradient(
-    circle,
-    rgba(var(--primary-rgb), 0.07) 0%,
-    rgba(var(--primary-rgb), 0.03) 30%,
-    transparent 70%
-  );
-  pointer-events: none;
-  z-index: var(--z-below);
-  will-change: transform;
-  transition: none;
-}
-
-@media (max-width: 767px) {
-  .cursor-spotlight {
-    display: none;
-  }
+  display: none;
 }

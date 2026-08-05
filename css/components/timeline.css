@@ -1,5 +1,5 @@
 /* ============================================
-   NEXUS — Timeline
+   NEXUS — Timeline (Win95 Style)
    ============================================ */
 
 .timeline {
@@ -13,14 +13,8 @@
   left: 15px;
   top: 0;
   bottom: 0;
-  width: 1px;
-  background: linear-gradient(
-    to bottom,
-    transparent,
-    rgba(var(--primary-rgb), 0.3) 10%,
-    rgba(var(--primary-rgb), 0.3) 90%,
-    transparent
-  );
+  width: 2px;
+  background: var(--win95-blue);
 }
 
 .timeline__item {
@@ -37,26 +31,23 @@
   position: absolute;
   left: 9px;
   top: 6px;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
+  width: 14px;
+  height: 14px;
   background: var(--primary);
   border: 2px solid var(--bg-primary);
-  box-shadow: 0 0 0 3px rgba(var(--primary-rgb), 0.2);
   z-index: 1;
 }
 
 .timeline__card {
   background: var(--surface-1);
-  border: var(--border-subtle);
-  border-radius: var(--radius-md);
+  border: 2px solid;
+  border-color: #505050 #000000 #000000 #505050;
   padding: var(--space-lg);
-  transition: all var(--duration-normal) var(--ease-out);
+  transition: none;
 }
 
 .timeline__card:hover {
-  border-color: rgba(var(--primary-rgb), 0.2);
-  transform: translateX(4px);
+  border-color: #000000 #505050 #505050 #000000;
 }
 
 .timeline__date {
@@ -64,18 +55,18 @@
   font-size: 0.6875rem;
   color: var(--primary);
   text-transform: uppercase;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.05em;
   margin-bottom: var(--space-sm);
   display: block;
 }
 
 .timeline__title {
-  font-size: 1.125rem;
+  font-size: 1rem;
   margin-bottom: var(--space-sm);
 }
 
 .timeline__text {
-  font-size: 0.875rem;
+  font-size: 0.8125rem;
   color: var(--text-tertiary);
-  line-height: 1.6;
+  line-height: 1.5;
 }

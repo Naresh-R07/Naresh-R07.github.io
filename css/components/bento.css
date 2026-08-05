@@ -1,5 +1,5 @@
 /* ============================================
-   NEXUS — Bento Grid (Skills)
+   NEXUS — Bento Grid (Win95 Style)
    ============================================ */
 
 .bento {
@@ -10,35 +10,20 @@
 
 .bento__item {
   background: var(--surface-1);
-  border: var(--border-subtle);
-  border-radius: var(--radius-lg);
+  border: 2px solid;
+  border-color: #505050 #000000 #000000 #505050;
   padding: var(--space-xl);
-  transition: all var(--duration-normal) var(--ease-out);
+  transition: none;
   position: relative;
   overflow: hidden;
 }
 
 .bento__item::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: radial-gradient(
-    400px circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
-    rgba(var(--primary-rgb), 0.04),
-    transparent 40%
-  );
-  opacity: 0;
-  transition: opacity var(--duration-normal);
-  pointer-events: none;
+  display: none;
 }
 
 .bento__item:hover {
-  border-color: rgba(255, 255, 255, 0.1);
-  transform: translateY(-2px);
-}
-
-.bento__item:hover::before {
-  opacity: 1;
+  border-color: #000000 #505050 #505050 #000000;
 }
 
 .bento__item--wide {
@@ -46,13 +31,13 @@
 }
 
 .bento__icon {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   margin-bottom: var(--space-md);
 }
 
 .bento__title {
-  font-size: 1rem;
-  font-weight: 600;
+  font-size: 0.9375rem;
+  font-weight: 700;
   margin-bottom: var(--space-md);
   color: var(--text-primary);
 }
@@ -68,7 +53,6 @@
   .bento {
     grid-template-columns: repeat(2, 1fr);
   }
-
   .bento__item--wide {
     grid-column: span 2;
   }
@@ -78,7 +62,6 @@
   .bento {
     grid-template-columns: 1fr;
   }
-
   .bento__item--wide {
     grid-column: span 1;
   }

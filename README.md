@@ -15,7 +15,7 @@ Personal portfolio showcasing cybersecurity research, AI/LLM security projects, 
 - Lenis — smooth scrolling
 - GitHub Pages — hosting
 
-## Sections -
+## Sections 
 
 - Hero — cinematic landing
 - Mission — intelligence profile

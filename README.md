@@ -1,4 +1,4 @@
-# Naresh-R07 — NARESH RAJJ S
+# Naresh-R07 — NARESH RAJJ S 
 
 > AI Security Researcher | Red Team Specialist | SOC Analyst
 
@@ -15,7 +15,7 @@ Personal portfolio showcasing cybersecurity research, AI/LLM security projects, 
 - Lenis — smooth scrolling
 - GitHub Pages — hosting
 
-## Sections
+## Sections 
 
 - Hero — cinematic landing
 - Mission — intelligence profile

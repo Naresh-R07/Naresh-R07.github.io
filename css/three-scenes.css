@@ -1,0 +1,112 @@
+/* ═══════════════════════════════════════════════════════════ */
+/* THREE.JS SCENES STYLING                                    */
+/* ═══════════════════════════════════════════════════════════ */
+
+/* Hero Three Scene */
+#hero-three-scene {
+  animation: fadeIn 1s ease-out;
+}
+
+#hero-three-scene canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* Skills Three Scene */
+#skills-three-scene {
+  border-radius: 12px;
+  overflow: hidden;
+  background: linear-gradient(135deg, #0a0e27 0%, #1a1f3a 100%);
+  border: 1px solid rgba(0, 255, 65, 0.1);
+  box-shadow: 0 0 40px rgba(0, 255, 65, 0.05);
+  transition: all 0.3s ease;
+}
+
+#skills-three-scene canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+#skills-three-scene:hover {
+  border-color: rgba(0, 255, 65, 0.2);
+  box-shadow: 0 0 60px rgba(0, 255, 65, 0.1);
+}
+
+/* Projects Three Scene */
+#projects-three-scene {
+  border-radius: 12px;
+  overflow: hidden;
+  background: linear-gradient(135deg, #0a0e27 0%, #1a1f3a 100%);
+  border: 1px solid rgba(77, 150, 255, 0.1);
+  box-shadow: 0 0 40px rgba(77, 150, 255, 0.05);
+  transition: all 0.3s ease;
+}
+
+#projects-three-scene canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+#projects-three-scene:hover {
+  border-color: rgba(77, 150, 255, 0.2);
+  box-shadow: 0 0 60px rgba(77, 150, 255, 0.1);
+}
+
+/* Canvas responsiveness */
+canvas {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Performance: Reduce animation during scroll */
+@media (prefers-reduced-motion: reduce) {
+  #hero-three-scene,
+  #skills-three-scene,
+  #projects-three-scene {
+    animation: none;
+  }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  #hero-three-scene {
+    min-height: 300px;
+  }
+
+  #skills-three-scene {
+    height: 300px;
+  }
+
+  #projects-three-scene {
+    height: 350px;
+  }
+
+  /* Disable 3D scenes on very small screens for performance */
+  @media (max-width: 480px) {
+    #hero-three-scene,
+    #skills-three-scene,
+    #projects-three-scene {
+      display: none;
+    }
+
+    /* Show fallback elements */
+    .hero__particles,
+    .bento {
+      display: block;
+    }
+  }
+}
